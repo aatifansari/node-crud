@@ -17,6 +17,6 @@ app.listen(3000, () => {
 });
 
 // mongodb(docker) connection
-mongoose.connect('mongodb://127.0.0.1:27017/myapp')
+mongoose.connect('mongodb://product-db:27017/myapp')
   .then(() => console.log('Connected!'))
   .catch((e) => console.log('MongoDB not connected ' + e));
